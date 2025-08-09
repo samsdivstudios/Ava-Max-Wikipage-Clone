@@ -12,18 +12,17 @@ body {
     color: white;
 }
 header {
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto;
 
 }
 h1 {
-    margin: 0 8px;
+    padding-left: 4px;
     border-bottom: 1px solid white;
 }
 nav {
     display: flex;
     justify-content: space-between;
-    margin: 0 8px;
     border-bottom: 1px solid white;
 }
 
@@ -32,7 +31,7 @@ nav ul {
     display: flex;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 4px;
 }
 
 nav li a{
@@ -55,21 +54,60 @@ article {
 }
 
 main {
-    max-width: 80%;
-    margin: 0 auto;
+    max-width: 100%;
+    padding: 20px;
 }
 
 aside {
-    width: 500px;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
     margin-top: 55px;
     float: right;
     border: 1px solid white;
 }
 
+.table-container {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
 table {
-    float: left;
+    width: 250px;
+    padding: 20px;
+    border-collapse: collapse;
+    border: none;
+}
+
+th, td {
     text-align: left;
+    font-size: 12px;
+    padding: 4px;
+    border: none;
+}
+th, td {
+    vertical-align: top;
+}
+
+
+
+table ul {
+    display: flex;
+    gap: 20px;
+}
+
+table ul li:first-child {
+    list-style-type: none;
+}
+
+table a {
+    text-decoration: none;
 }
 
 p {
